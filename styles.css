@@ -1,0 +1,311 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
+}
+
+.section1 {
+    background-image:url('https://www.tesla.com/content/dam/tesla-site/home-page/images/main-hero-desktop.webp');
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+    background-position-x:50%;
+    height:100vh;
+    animation: animateBg forwards 1s ease-in;
+}
+@keyframes animateBg{
+    from { background-size: 100%; }
+    to { background-size: 170%; background-position-y:50%; background-position-x:50%; }
+}
+.header {
+    display:flex;
+    justify-content: space-between;
+    padding:15px;
+}
+
+.logo img {
+    width:120px;
+}
+.nav a {
+    font-family:'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size:14px;
+    color:#fff;
+    margin-left:8px;
+    margin-right: 8px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+.links a {
+    margin-right:10px;
+    font-family:'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size:14px;
+    color:#fff;
+}
+.main {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top:50px;
+}
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:35px;
+    color:#fff;
+    font-weight:600;
+}
+.buttons {
+    display: flex;
+    flex-direction:row;
+    margin-top:40px;
+}
+.whitebtn {
+    background-color:#fff;
+    color:#000;
+    padding:12px 70px;
+    border-radius:50px;
+    font-size:13px;
+    text-decoration: none;
+    margin:10px;
+    text-transform: uppercase;
+}
+.whitebtn:hover {
+    background-color:rgb(245, 245, 245);
+}
+.clearbtn {
+    color:#fff;
+    border:3px solid #fff;
+    padding:12px 50px;
+    border-radius:50px;
+    font-size:13px;
+    text-decoration: none;
+    margin:10px;
+
+}
+.clearbtn:hover {
+    background-color:rgb(255, 255, 255);
+    color:#000;
+}
+
+.visit {
+    color:#fff;
+    font-size:12px;
+    text-decoration: none;
+    border-bottom:1px solid #fff;
+    margin-top:30px;
+}
+
+.disclaimer {
+    position:absolute;
+    top:85%;
+    color:#fff;
+    font-size:12px;
+}
+
+/* CAROUSEL LINKS */
+
+.carosel {
+    display:block;
+    position:fixed;
+    left:1%;
+    top:20%;
+}
+.caroselLinks {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size:12px;
+}
+.caroselLinks a {
+    text-decoration: none;
+}
+.caroselLinks li {
+    margin-bottom:5px;
+}
+.sidetab {
+    border-left:2px solid #fff;
+    height:20px;
+    opacity:0.6;
+}
+.sidetab:hover {
+    opacity:1;
+}
+.sidetab:active {
+    opacity:1;
+}
+.label {
+    opacity:0;
+    margin-left:10px;
+    color:#fff;
+}
+.label:hover {
+    opacity:1;
+}
+
+/* DOWN ARROW */
+
+.arrow {
+    position: fixed;
+    top:93%;
+    width: 20px;
+    height: 20px;
+    background-image:url(arrow.png) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    animation: bounce 2s infinite;
+    -moz-animation:bounce 2s infinite;
+    -webkit-animation:bounce 2s infinite;
+}
+
+
+
+/* ARROW BOUNCE ANIMATION */
+
+@keyframes bounce {
+    0%,20%,50%,80%,100% {
+    -moz-transform:translateY(0);
+    -ms-transform:translateY(0);
+    -webkit-transform:translateY(0);
+    transform: translateY(0)
+      }
+     40% {
+      -moz-transform:translateY(-15px);
+      -ms-transform:translateY(-15px);
+     -webkit-transform:translate(-15px);
+      transform: translateY(-15px)
+      }
+      60% {
+      -moz-transform:translateY(-10px);
+       -ms-transform:translateY(-10px);
+    -webkit-transform:translateY(-10px);
+      transform: translateY(-10px)
+       }
+     }
+    @-webkit-keyframes bounce {
+     0%,20%,50%,80%,100% {
+     -moz-transform:translateY(0);
+     -ms-transform:translateY(0);
+     -webkit-transform:translateY(0);
+      transform: translateY(0)
+      }
+     40% 
+      {
+    -moz-transform:translateY(-15px);
+    -ms-transform:translateY(-15px);
+    -webkit-transform:translate(-15px);
+     transform: translateY(-15px)
+     }
+     60% {
+     -moz-transform:translateY(-10px);
+     -ms-transform:translateY(-10px);
+    -webkit-transform:translateY(-10px);
+    transform: translateY(-10px)
+      }
+   }
+   @-moz-keyframes bounce {
+    0%,20%,50%,80%,100% {
+   -moz-transform:translateY(0);
+  -ms-transform:translateY(0);
+  -webkit-transform:translateY(0);
+  transform: translateY(0)
+  }
+   40% {
+  -moz-transform:translateY(-15px);
+   -ms-transform:translateY(-15px);
+   -webkit-transform:translate(-15px);
+  transform: translateY(-15px)
+   }
+   60% {
+   -moz-transform:translateY(-10px);
+   -ms-transform:translateY(-10px);
+    -webkit-transform:translateY(-10px);
+    transform: translateY(-10px)
+    }
+   }
+
+
+   /* SECTION 2 */ 
+
+   .section2 {
+       height:100vh;
+       background-image:url('https://www.tesla.com/sites/tesla/files/curatedmedia/power-hero-desktop-poster.png');
+       background-size:cover;
+       background-repeat:no-repeat;
+       background-position-y: center;
+       background-position-x: center;
+       animation: animateBg forwards 1s ease-in;
+}
+@keyframes animateBg{
+    from { background-size: 100%; }
+    to { background-size: 170%; background-position-y:50%; background-position-x:50%; }
+   }
+
+   .arrow2 {
+    z-index:1000;
+    display:block;
+    position: relative;
+    top:20%;
+    right:-5500%;
+    width: 20px;
+    height: 20px;
+    background-image:url(arrowup.png) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.s2content {
+    display:flex;
+    margin:0 auto;
+    flex-direction: column;
+    align-content:center;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin-top:80px;
+    width:400px;
+}
+
+.section2 p {
+    color:#fff;
+    font-family:'Montserrat', sans-serif;
+    font-weight:200;
+    margin-top:10px;
+    margin-bottom:40px;
+}
+
+.header2 {
+    display:flex;
+    align-items: flex-start;
+    padding:15px;
+}
